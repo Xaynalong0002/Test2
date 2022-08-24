@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <h2>List of Heavy Parcels: </h2>
+            <table>
+                
+                <tr>
+                    <th>Sender</th>
+                    <th>Address</th>
+                    <th>Weight</th>
+                    <th>Is Fragile?</th>
+                </tr>
+
+                <% for ( let i =0; i< parcelDb.length;i++){ %>
+
+                    <% if( parcelDb[i].weight > 100 ) { %>
+                        <tr>
+                            <td>
+                                <%= parcelDb[i].sender %>
+                            </td>
+                            <td>
+                                <%= parcelDb[i].address %>
+                            </td>
+                            <td>
+                                <%= parcelDb[i].weight %>
+                            </td>
+                            <td>
+                                <%= parcelDb[i].fragile %>
+                            </td>
+                        </tr>
+
+                    <%}%>
+                    
+                <% }%>
+
+            
+         </table>
+
+         <p> Click <a href='/'>HERE</a> to return to the homepage!!</p>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <h1>Add New Parcel:</h1>
+    <form action="/newparcel" method="post">
+        
+        <table>
+            <tr>
+                <td> Sender </td>
+                <td> <input type="text" name="sender" /></td>
+            </tr>
+
+            <tr>
+                <td> Address </td>
+                <td> <input type="text" name="address" /></td>
+            </tr>
+
+            <tr>
+                <td> Weight </td>
+                <td> <input type="number" name="weight" /></td>
+            </tr>
+
+            <tr>
+                <td> Fragile </td>
+                <td> 
+                    <select name = "fragile">
+                        <option value = "true">Yes</option>
+                        <option value = "false">No</option>
+                    </select> 
+                </td>
+            </tr>
+
+            <tr>
+                <td> <button>Submit</button> </td>
+            </tr>
+            
+        </table>
+
+        <p> Click <a href='/'>HERE</a> to return to the homepage!!</p>
+
+
+    </form>
+</html>

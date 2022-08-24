@@ -1,0 +1,23 @@
+body {
+    background-color: lightblue;
+    background-image: url('background.jpg');
+}
+
+table {
+    border: 1px solid;
+    width: 20%;
+    border-collapse: collapse;
+   
+    
+}
+
+th {
+    background-color: yellowgreen;
+}
+
+th, td {
+    border: 1px solid;
+    text-align: center;
+    
+}
+
